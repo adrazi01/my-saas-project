@@ -1,8 +1,14 @@
 {
-    "name": "@repo/shared",
+    "name": "@my-saas-project/shared",
     "version": "0.0.0",
     "main": "./index.ts",
     "types": "./index.ts",
+    "exports": {
+      ".": {
+        "types": "./index.ts",
+        "default": "./index.ts"
+      }
+    },
     "dependencies": {
         "zod": "latest"
     }
